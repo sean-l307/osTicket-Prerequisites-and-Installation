@@ -8,25 +8,17 @@
 
 <h2>Environments and Technologies Used</h2>
 
--Microsoft Azure
--Remote Desktop
--Internet Information Services
--osTicket
--HeidiSQL
+- Microsoft Azure
+- Remote Desktop
+- Internet Information Services
+- osTicket
+- HeidiSQL
 
 <h2>Operating Systems Used </h2>
 
 Windows 10 (21H2)
 
-<h2>List of Prerequisites</h2>
 
--Microsoft Azure
--Remote Desktop
--Internet Information Services
--osTicket
--HeidiSQL
-
-<h2>Installation Steps</h2>
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
