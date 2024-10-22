@@ -3,7 +3,7 @@
 </p>
 
 <h1>osticket-prereqs</h1>
-This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
+"This tutorial walks you through the prerequisites and installation of osTicket, an open-source support ticketing system. It's designed for beginners to learn the basics, but in real-world scenarios, further customization may be needed to fit your company’s requirements. We'll be deploying osTicket on a Windows 10 virtual machine (VM) hosted in Azure, though you can use any machine capable of running a VM. If you're unfamiliar with setting up a VM, a link to a previous tutorial with a step-by-step guide will be provided below."<br />
 
 
 <h2>Video Demonstration</h2>
@@ -22,11 +22,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+-Microsoft Azure
+-Remote Desktop
+-Internet Information Services
+-osTicket
+-HeidiSQL
 
 <h2>Installation Steps</h2>
 
