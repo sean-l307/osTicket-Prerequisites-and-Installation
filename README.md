@@ -6,19 +6,17 @@
 "This tutorial walks you through the prerequisites and installation of osTicket, an open-source support ticketing system. It's designed for beginners to learn the basics, but in real-world scenarios, further customization may be needed to fit your company’s requirements. We'll be deploying osTicket on a Windows 10 virtual machine (VM) hosted in Azure, though you can use any machine capable of running a VM. If you're unfamiliar with setting up a VM, a link to a previous tutorial with a step-by-step guide will be provided below."<br />
 
 
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
-
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
-- Internet Information Services (IIS)
+-Microsoft Azure
+-Remote Desktop
+-Internet Information Services
+-osTicket
+-HeidiSQL
 
 <h2>Operating Systems Used </h2>
 
-- Windows 10</b> (21H2)
+Windows 10 (21H2)
 
 <h2>List of Prerequisites</h2>
 
