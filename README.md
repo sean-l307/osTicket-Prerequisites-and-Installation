@@ -146,7 +146,7 @@ Open File Explorer and navigate back to the osTicket folder within inetpub. Clic
 ![image](https://github.com/user-attachments/assets/1969d559-fb96-4fb3-89ab-3bd97996d64d)
 </p>
 <p>
-Next, right-click on the file and select Properties. Go to the Security tab, then click on Advanced. Disable inheritance and remove all entries.
+Next, right-click on the file and select Properties. Go to the Security tab, then click on Advanced. Disable inheritance and remove all entries.(In most real life situations your not gonna allow all these) 
 </p>
 <br />
 
@@ -164,3 +164,44 @@ After that, click Add, then select a principal. Type 'Everyone' in the object bo
 Check the box for 'Full Control,' then click OK. Apply the changes and continue clicking OK until the Properties window closes.
 </p>
 <br />
+
+
+![Capture18(might have sc'ed to early)](https://github.com/user-attachments/assets/3170e37a-16f2-46eb-aa03-69e61b0862c2)
+</p>
+<p>
+Go back to the osTicket installer and click 'Continue.' Then, select a name for your helpdesk and provide a random email address. For this tutorial, we'll use the name 'Sean's Help Desk' and the email '(enter an email).' Next, create your own admin user credentials. I used a random email and set a password, so make sure to jot these down for future reference.
+</p>
+<br />
+
+
+![Capture19(set up databse)](https://github.com/user-attachments/assets/746d0db6-7790-4e1b-8077-4fcd1f058ec8)
+</p>
+<p>
+Next, download HeidiSQL from the drive folder that contains a Word document with the download link. Open the installer and click 'Continue' until the installation is complete. Once installed, click the 'New' button at the bottom of the window. The username should be pre-filled as 'root'; enter the password we created, 'Password1,' and then click 'Open. In HeidiSQL, right-click on 'Unnamed,' then select 'Create New' followed by 'Database.' Name the new database 'osTicket' and click OK.
+</p>
+<br />
+
+
+![Capture19(input info on databse)](https://github.com/user-attachments/assets/681bd2f4-5a58-4382-89db-e666a865cc2d)
+</p>
+<p>
+Return to the osTicket installer and enter the username and password. Use 'root' for the username and 'Password1' for the password. The hostname should also be set to 'osTicket.
+</p>
+<br />
+
+
+![image](https://github.com/user-attachments/assets/f13b54a3-a570-4a34-9b5d-8bdd9f8131fe)
+</p>
+<p>
+To tidy up the tutorial, navigate back to C:\inetpub\wwwroot\osTicket and delete the 'setup' folder.
+</p>
+<br />
+
+
+![image](https://github.com/user-attachments/assets/c7dba648-c966-452c-8107-5e4b64bf7ab0)
+</p>
+<p>
+Stay in the osTicket folder and navigate to the 'include' directory. Locate 'ost-config.php,' right-click on it, and select Properties. Go to the Security tab, then click on Advanced. Select 'Everyone,' click Edit, and set the permissions to 'Read' and 'Read and execute' only. Click OK, then Apply, and finally OK to close the window.
+</p>
+<br />
+
