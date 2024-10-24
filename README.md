@@ -84,7 +84,83 @@ From the “osTicket-Installation-Files” folder, install MySQL 5.5.62 (mysql-5
 Typical Setup ->
 Launch Configuration Wizard (after install) ->
 Standard Configuration ->
-Then make a secure password with a mix of upper and lowercase letters, numbers, and special characters
+Then make a secure password with a mix of upper and lowercase letters, numbers, and special characters.
 
+</p>
+<br />
+
+<p float="left">
+  <img src="https://github.com/user-attachments/assets/631272df-0479-4e10-b519-8d2b185bd352" alt="Capture12" width="45%" />
+  <img src="https://github.com/user-attachments/assets/800de62e-dc15-4f2f-941d-6f3225df0e22" alt="Capture12_1" width="45%" />
+</p>
+<p>
+Open IIS as an Admin then register PHP from within IIS (PHP Manager -> C:\PHP\php-cgi.exe).Finally reload IIS (Open IIS, Stop and Start the server)
+</p>
+<br />
+
+<p float="left">
+  <img src="https://github.com/user-attachments/assets/1e799fb4-c4a2-4527-8d66-5a7acfcbca89" alt="Capture14edit" width="45%" />
+  <img src="https://github.com/user-attachments/assets/66dae89c-a4e4-4173-b8aa-499ef9d9286f" alt="Capture14image" width="45%" />
+</p>
+<p>
+"Download the osTicket-v1.15.8 file from the installation folder. Once it's downloaded, open two file explorer windows. In one window, navigate to the osTicket-v1.15.8.zip folder, and in the other, go to 'inetpub' > 'wwwroot.' Extract the 'upload' folder from the osTicket zip and move it to the 'wwwroot' directory. Once the transfer is complete, rename the 'upload' folder to 'osTicket'."
+</p>
+<br />
+
+
+![image](https://github.com/user-attachments/assets/aaeac803-5a21-4a66-9baa-924ea7df87b3)
+![image](https://github.com/user-attachments/assets/cfd495df-ff2e-4541-8cfa-225bfba65d66)
+
+</p>
+<p>
+Restart IIS as admin and expand VM1 on the left menus > Sites > Default Web Sites > Click osTicket. Click on "Browse *.80 which will open web browser that will open a osTicket installer.
+</p>
+<br />
+
+<p>
+    <img src="https://github.com/user-attachments/assets/f38f8a03-cde2-4f80-a924-6afe503d0905" alt="Image 1" style="display:inline-block; margin-right:10px;" width="500">
+    <img src="https://github.com/user-attachments/assets/dabb8598-1334-4c79-911a-cf7fb2c57e36" alt="Image 2" style="display:inline-block;" width="500">
+</p>
+<p>
+Return to IIS Manager and navigate back to osTicket. Click on the 'PHP Manager' icon, then scroll to the bottom and select 'Enable or disable an extension.' Enable the extensions 'php_imap.dll', 'php_intl.dll', and 'php_opcache.dll' by right-clicking on each and selecting 'Enable.
+</p>
+<br />
+
+![Capture16part2](https://github.com/user-attachments/assets/1ef5b895-eff0-4ba3-a8bb-44c58d4fd4da)
+</p>
+<p>
+Refresh the web browser that has the osTicket installer and observe the changes. It should look like the screenshot above.
+</p>
+<br />
+
+<p>
+    <img src="https://github.com/user-attachments/assets/b6fbd1f3-9cdd-413c-b96b-7575dca0fbf2" alt="Image 1" style="display:inline-block; margin-right:10px;" width="500">
+    <img src="https://github.com/user-attachments/assets/b01270f8-c70f-418b-a8f3-c373289e8d51" alt="Image 2" style="display:inline-block;" width="500">
+</p>
+<p>
+Open File Explorer and navigate back to the osTicket folder within inetpub. Click on the 'include' directory and find ost-sampleconfig.php at the bottom of the list. Rename the file from ost-sampleconfig.php to ost-config.php.
+</p>
+<br />
+
+
+![image](https://github.com/user-attachments/assets/1969d559-fb96-4fb3-89ab-3bd97996d64d)
+</p>
+<p>
+Next, right-click on the file and select Properties. Go to the Security tab, then click on Advanced. Disable inheritance and remove all entries.
+</p>
+<br />
+
+
+![Capture17](https://github.com/user-attachments/assets/c6434fa2-c90d-43c8-9231-824349f70d45)
+</p>
+<p>
+After that, click Add, then select a principal. Type 'Everyone' in the object box, click Check Names, and then press OK.
+</p>
+<br />
+
+![Capture17part2](https://github.com/user-attachments/assets/b4ba736e-9b76-4de2-9331-0f31386b72ba)
+</p>
+<p>
+Check the box for 'Full Control,' then click OK. Apply the changes and continue clicking OK until the Properties window closes.
 </p>
 <br />
